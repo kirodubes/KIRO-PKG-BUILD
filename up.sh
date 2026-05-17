@@ -114,20 +114,20 @@ git_commit_and_push() {
     local branch
 
     log_section "Git add / commit / push"
-    git add --all .
+    git -C "${SCRIPT_DIR}" add --all .
 
-    if [[ -z "$(git status --porcelain)" ]]; then
+    if [[ -z "$(git -C "${SCRIPT_DIR}" status --porcelain)" ]]; then
         log_info "Nothing to commit — working tree clean"
     else
-        git commit -m "update" || log_error "Git commit failed"
+        git -C "${SCRIPT_DIR}" commit -m "update" || log_error "Git commit failed"
     fi
 
-    branch="$(git rev-parse --abbrev-ref HEAD)"
+    branch="$(git -C "${SCRIPT_DIR}" rev-parse --abbrev-ref HEAD)"
 
-    if ! git push -u origin "${branch}"; then
+    if ! git -C "${SCRIPT_DIR}" push -u origin "${branch}"; then
         log_warn "Push rejected — rebasing on remote changes and retrying"
-        git pull --rebase origin "${branch}" || { log_error "Rebase failed — resolve conflicts manually"; return 1; }
-        git push -u origin "${branch}" || log_error "Git push failed after rebase"
+        git -C "${SCRIPT_DIR}" pull --rebase origin "${branch}" || { log_error "Rebase failed — resolve conflicts manually"; return 1; }
+        git -C "${SCRIPT_DIR}" push -u origin "${branch}" || log_error "Git push failed after rebase"
     fi
 }
 
