@@ -21,16 +21,16 @@ Latest build — both `calamares` and `calamares-next` variants at version `-4`:
 
 **Previous builds in repo (newest → oldest):**
 
-| Build dir | Notes |
-|---|---|
-| `calamares-3.3.14.r132.g841b478-4` | Current — both calamares + calamares-next |
-| `calamares-3.3.14.r132.g841b478-3` | Previous iteration |
-| `calamares-3.3.14.r132.g841b478-2` | Earlier iteration |
-| `calamares-3.3.14.r87.g3f6cd83-1` | Earlier upstream snapshot |
-| `calamares-3.3.14.r90.g53c70f8-1` | Earlier upstream snapshot |
-| `calamares-3.3.14.r81.g55f0c9e-2` | Earlier upstream snapshot |
-| `calamares-git-3.3.14.r51.g3b9ef52-2` | Original `-git` named build |
-| `calamares-next-3.3.14.r132.g841b478-2/3/4` | Next-track parallel builds |
+| Build dir                                   | Notes                                     |
+|---------------------------------------------|-------------------------------------------|
+| `calamares-3.3.14.r132.g841b478-4`          | Current — both calamares + calamares-next |
+| `calamares-3.3.14.r132.g841b478-3`          | Previous iteration                        |
+| `calamares-3.3.14.r132.g841b478-2`          | Earlier iteration                         |
+| `calamares-3.3.14.r87.g3f6cd83-1`           | Earlier upstream snapshot                 |
+| `calamares-3.3.14.r90.g53c70f8-1`           | Earlier upstream snapshot                 |
+| `calamares-3.3.14.r81.g55f0c9e-2`           | Earlier upstream snapshot                 |
+| `calamares-git-3.3.14.r51.g3b9ef52-2`       | Original `-git` named build               |
+| `calamares-next-3.3.14.r132.g841b478-2/3/4` | Next-track parallel builds                |
 
 ---
 
